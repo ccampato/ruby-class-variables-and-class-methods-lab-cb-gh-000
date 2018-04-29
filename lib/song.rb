@@ -27,6 +27,7 @@ class Song
     @@artists.each do |artist|
       artist_array << artist unless artist_array.include?(artist)
     end
+    artist_array
   end
 
   def genre_count
