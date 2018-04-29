@@ -22,7 +22,7 @@ class Song
     @@genres
   end
 
-  def self.artist
+  def self.artists
     artist_array = []
     @@artists.each do |artist|
       artist_array << artist unless artist_array.include?(artist)
