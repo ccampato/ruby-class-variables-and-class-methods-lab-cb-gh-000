@@ -34,7 +34,8 @@ class Song
     artist_array
   end
 
-  def genre_count
+  def self.genre_count
+    Hash.new { |genres, count| hash[genres] = count }
   end
 
   def artist_count
